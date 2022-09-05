@@ -1567,7 +1567,7 @@ namespace LCD1IN8 {
         pins.digitalWritePin(DigitalPin.P16, 1);
     }
 
-    function LCD_SetWindows(Xstart: number, Ystart: number, Xend: number, Yend: number): void {
+    export function LCD_SetWindows(Xstart: number, Ystart: number, Xend: number, Yend: number): void {
         //set the X coordinates
         LCD_WriteReg(0x2A);
         LCD_WriteData_8Bit(0x00);
